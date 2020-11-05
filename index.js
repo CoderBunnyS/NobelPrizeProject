@@ -13,4 +13,8 @@ app.use(bodyParser.json())
 app.use('/', require('./routes/Nobel_Routes'))
 
 
+<<<<<<< HEAD
 app.listen(4001, () => console.log('listening on port 4001'))
+=======
+app.listen(4000, () => console.log('listening on port 4000'))
+>>>>>>> 5a974638cddbdd1c13826fe8005d1bf6e5208e36
