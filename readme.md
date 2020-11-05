@@ -64,6 +64,3 @@ Update entry by year (1901-2020) - http://localhost:4001/year/2020
 ### Request
 
 Delete entry by year (1901-2020) - http://localhost:4001/year/2020
-
-
-Testy testy

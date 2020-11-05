@@ -15,15 +15,5 @@ Prize.collection.insert(modelData)
     console.log(err)
   })
 
-<<<<<<< HEAD
 
-=======
-// Bachelorette.remove({})
-// Bachelorette.collection.insert(bacheloretteData)
-//   .then(bachelorettes => {
-//     console.log(bacheloretteData)
-//   })
-//   .catch(err => {
-//     console.log(err)
-//   })
->>>>>>> 5a974638cddbdd1c13826fe8005d1bf6e5208e36
+
