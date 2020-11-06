@@ -3,7 +3,7 @@
 
 const mongoose = require("mongoose")
 
-mongoose.connect('mongodb://localhost/NobelPrizes', { useNewUrlParser: true })
+
 
 mongoURI = "";
 if (process.env.NODE_ENV === "production") {
@@ -11,5 +11,7 @@ if (process.env.NODE_ENV === "production") {
   } else {
     mongoURI = "mongodb://localhost/NobelPrizes";
   }
+
+  mongoose.connect(mongoURI, { useNewUrlParser: true })
 
 module.exports = mongoose
