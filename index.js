@@ -2,9 +2,12 @@
 //app activates express function so it's usable w/ app.use or app.listen, etc
 const express = require('express');
 const app = express();
+const cors = require("cors");
 //body-parser takes info from form/postman and 
 //formats it so both express(server) and mongoose (database) can read it
 const bodyParser = require('body-parser');
+
+app.use(cors());
 
 //when app (server function) is called - format it to JSON
 app.use(bodyParser.json())
@@ -19,3 +22,4 @@ app.listen(app.get("port"), () => {
 });
 
 app.listen(4001, () => console.log('listening on port 4001'))
+
