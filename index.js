@@ -12,5 +12,10 @@ app.use(bodyParser.json())
 //w/ require you're connecting it to the list of routes available
 app.use('/', require('./routes/Nobel_Routes'))
 
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
 
 app.listen(4001, () => console.log('listening on port 4001'))
