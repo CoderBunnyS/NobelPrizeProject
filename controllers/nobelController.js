@@ -34,8 +34,14 @@ module.exports = {
         res.json(data)
       })
   },
+  // delete: (req, res) => {
+  //   Prizes.findOneAndDelete({year: req.params.year})
+  //     .then(data => {
+  //       res.json(data)
+  //     })
+  // },
   delete: (req, res) => {
-    Prizes.findOneAndDelete({year: req.params.year})
+    Prizes.findOneAndDelete({_id: req.params.id})
       .then(data => {
         res.json(data)
       })

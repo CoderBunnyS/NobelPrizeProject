@@ -13,6 +13,7 @@ router.get('/category/:category', nobelController.showCategory)
 
 router.post('/create/', nobelController.create)
 router.put('/year/:year', nobelController.edit)
-router.delete('/year/:year', nobelController.delete)
+//router.delete('/year/:year', nobelController.delete)
+router.delete('/id/:id', nobelController.delete)
 
 module.exports = router

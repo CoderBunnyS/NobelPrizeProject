@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
   } else {
     mongoURI = "mongodb://localhost/NobelPrizes";
   }
-
-  mongoose.connect(mongoURI, { useNewUrlParser: true })
+//must be after conditional
+mongoose.connect(mongoURI, { useNewUrlParser: true })
 
 module.exports = mongoose
