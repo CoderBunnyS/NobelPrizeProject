@@ -29,7 +29,7 @@ module.exports = {
       })
   },
   edit: (req, res) => {
-    Prizes.findOneAndUpdate({year: req.params.year}, req.body)
+    Prizes.findOneAndUpdate({_id: req.params.id}, req.body)
       .then(data => {
         res.json(data)
       })
